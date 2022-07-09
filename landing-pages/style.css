@@ -1,0 +1,66 @@
+/* Base styles */
+*{
+    box-sizing: border-box;
+}
+
+html { 
+    background: url(./image/silas-baisch-K785Da4A_JA-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#bImage{
+    position: relative;
+}
+
+#main{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 200px;
+    width: 50%; /* Need a specific value to work */
+    text-align: center;
+}
+
+.head{
+    font-family: 'Roboto Slab', serif;
+    color: rgb(8, 209, 245);
+    text-shadow: -3px 3px 5px rgb(1, 19, 26);
+}
+
+.content{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(8, 209, 245);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logoNtext{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight: 600;
+    color: rgb(1, 10, 14);
+    font-size: 0.9em;
+}
+
+.logoNtext:hover{
+    color: rgb(9, 76, 102);
+}
+
+.logoNtextCon{
+    margin-top: 10px;
+}
+
+
+/* Gradient transparent - color - transparent */
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(9, 76, 102, .4), rgba(0, 217, 255, .4), rgba(9, 76, 102, .4));
+    width: 50%;
+}
