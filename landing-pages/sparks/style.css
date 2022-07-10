@@ -1,0 +1,111 @@
+/** base styles **/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+}
+
+html { 
+    background: url(./images/landing.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** navbar styling **/
+.navbar-inner {
+    background:transparent;
+}
+
+#parent{
+    position: relative;
+}
+
+#child{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.menu-bar{
+    background-image: linear-gradient(-90deg, rgba(223, 247, 4, 0.4), rgba(253, 0, 30, 0.4));
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 3px;
+    color: white!important;
+    font-weight: 500;
+}
+
+.navbar-nav{
+    text-align: right;
+    margin-right: 10px;
+}
+
+#navbarNav{
+    padding-right: 20px;
+}
+
+.navbar .navbar-toggler{
+    padding-right: 20px;
+    outline: none!important;
+    border: none!important;
+}
+
+.navbar .fa-solid{
+    color: white!important;
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    color: white!important;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    border-bottom: 1px solid white;    
+}
+
+.button{
+    border: 1px solid red;
+    background-color: red;
+    width: 30%;
+}
+
+/* #button-container{
+    position: relative;
+} */
+
+/* #position-icon{
+    position: absolute;
+    top: 10px;
+    right: 70px;
+} */
+
+.fa-solid .fa-circle-arrow-up{
+    color: white;
+}
+
+@media only screen and (max-width: 991px){
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+
+    /* #button-container{
+        text-align: right;
+        margin-right: 150px;
+    } */
+}
+
+/** end navbar styling **/
+
