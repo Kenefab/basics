@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #6c6c6c;
+}
+
+html { 
+    background: url(landing.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#parent{
+    position: relative;
+}
+
+#child{
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/** navbar stlying **/
+.nav-link{
+    font-size: 13px;
+    margin: 10px 0px 50px 0px;
+    text-transform: uppercase;
+    color: #6c6c6c!important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover{
+    font-weight: 600;
+    border-bottom: 1px solid #6c6c6c; 
+    margin-bottom: 0;   
+}
+
+.navbar-nav{
+    margin-right: 20px;
+    text-align: right;
+}
+
+.navbar-toggler{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.fa-brands.fa-wikipedia-w{
+    font-size: 70px;
+    font-weight: 400;
+    color: #6c6c6c!important;
+    margin-left: 20px;
+    padding: 50px 0;
+}
+
+.fa-brands.fa-wikipedia-w:hover{
+    font-weight: 600;
+}
+
+.fa-solid.fa-bars-staggered{
+    color: #6c6c6c!important;
+}
+/** navbar stlying end **/
+/*****************************************/
+/** jumbotron stlying **/
+.jumbotron{
+    margin-top: 50px;
+}
+
+.display-4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    width: 45%;
+}
+
+.lead{
+    font-family: 'Nunito Sans', sans-serif;
+    width: 38.5%;
+}
+
+#btns{
+    margin-top: 20px;
+}
+
+.btn.btn-primary.btn-lg{
+    margin-right: 20px;
+    border-radius: 0%;
+}
+
+#buttonY{
+    background-color: #efc337;
+    color: #FFFFFF;
+    border: #efc337;
+    padding: 15px;
+    font-size: 16px;
+    width: 24%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.5s;
+}
+
+#buttonY:hover{
+    background-color: #6c6c6c;
+    color: #FFFFFF;
+    border: #6c6c6c;
+}
+
+#buttonW{
+    background-color: #FFFFFF4D;
+    color: #6c6c6c;
+    border: 2px solid #FFFFFF;
+    padding: 15px;
+    font-size: 16px;
+    width: 22%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.5s;
+}
+
+#buttonW:hover{
+    background-color: #FFFFFF;
+    color: #6c6c6c;
+    border: #FFFFFF;
+}
+/** jumbotron end **/
+/************************/
+/** First row **/
+.firstrow{
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+#section-1{
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
+#site{
+    font-style: italic;
+}
+
+
+@media only screen and (max-width: 991px){
+    .nav-link{
+        font-size: 13px;
+        margin: 10px;
+        text-transform: uppercase;
+        color: #6c6c6c!important;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+
+    .fa-brands.fa-wikipedia-w{
+        font-size: 70px;
+        font-weight: 400;
+        color: #6c6c6c!important;
+        margin-left: 20px;
+    }
+}
+
+
