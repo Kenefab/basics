@@ -15,10 +15,6 @@ html {
 }
 
 /** navbar styling **/
-.navbar-inner {
-    background:transparent;
-}
-
 #parent{
     position: relative;
 }
