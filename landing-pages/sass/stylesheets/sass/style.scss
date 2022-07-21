@@ -1,0 +1,137 @@
+///////////////////
+//Variables
+$color-main: #6c6c6c;
+$color-white: #ffff!important;
+
+
+$font-poppins: 'Poppins', sans-serif;
+$font-playfair: 'Playfair Display', serif;
+$font-nunito: 'Nunito Sans', sans-serif;
+
+////////////////
+//Mixins
+@mixin rounded($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin shadow-inset($x, $y, $blur, $color) {
+    -webkit-box-shadow: inset $x $y $blur $color;
+    -moz-box-shadow: inset $x $y $blur $color;
+    box-shadow: inset $x $y $blur $color;
+}
+
+@mixin transition($property) {
+    -webkit-transition: $property .2s ease;
+    -moz-transition: $property .2s ease;
+    -o-transition: $property .2s ease;
+    transition: $property .2s ease;
+}
+
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin linear-gradient($from, $to) {
+    /* Fallback for sad browsers */
+    background-color: $to;
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient($from, $to);
+    /* Opera */
+    background-image: -o-linear-gradient($from, $to);
+    /* WebKit (Chrome 11+) */
+    background-image: -webkit-gradient(linear, »
+    left top, left bottom, color-stop(0, $from), »
+    color-stop(1, $to));
+    /* WebKit (Safari 5.1+, Chrome 10+) */
+    background-image: -webkit-linear-gradient($from, $to);
+    /* IE10 */
+    background-image: -ms-linear-gradient($from, $to);
+    /* W3C */
+    background-image: linear-gradient($from, $to);
+}
+
+@mixin cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+//////////////////////////
+/*!Base styles*/
+*{
+    @include box-sizing;
+    margin: 0;
+    padding: 0;
+    color: $color-main;
+}
+
+
+html { 
+    background: url(../images/landing.jpg) no-repeat center center fixed; 
+    @include cover;
+}
+
+#parent{
+    position: relative;
+
+    #child{
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
+
+/*Navbar styling*/
+.nav-link{
+    font-size: 13px;
+    margin: 10px 0px 50px 0px;
+    text-transform: uppercase;
+    color: $color-main!important;
+    font-family: $font-poppins;
+
+    &:hover{
+        font-weight: 600;
+        border-bottom: 1px solid $color-main; 
+        margin-bottom: 0;
+    }
+}
+
+.navbar-nav{
+    margin-right: 100px;
+    text-align: right;
+}
+
+.navbar-toggler{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.fa-brands.fa-wikipedia-w{
+    font-size: 70px;
+    font-weight: 400;
+    color: $color-main;
+    margin-left: 100px;
+    padding: 50px 0;
+
+    &:hover{
+        font-weight: 600;
+    }
+}
+
+.fa-solid.fa-bars-staggered{
+    color: $color-main!important;
+}
+
